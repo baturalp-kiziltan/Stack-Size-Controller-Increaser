@@ -9,20 +9,29 @@
 <body>
     <div id="root">
         <div id="images">
-            <img id="rust-logo" src="static/assets/rust.png">
-            <img id="github-logo" src="static/assets/github.png">
+            <a href="https://rust.facepunch.com/" target="_blank">
+                <img id="rust-logo" src="static/assets/rust.png">
+            </a>
+            <a href="https://github.com/baturalp-kiziltan/Stack-Size-Controller-Increaser/" target="_blank">
+                <img id="github-logo" src="static/assets/github.png">
+            </a>
         </div>
         <div id="url-form">
-            <input type="file", name="_file">
-            <input type="text", name="_mult">
-            <input type="submit" value="Multiply">
+            <input type="file", id="file" name="_file">
+            <input type="text" id="mult" name="_mult">
+            <input type="submit" id="submit" value="Multiply">
         </div>
         <div id="hint">
             <br><br>
-            <b> 1) Upload StackSizeController.json file. <b><br>
-            <b> 2) Write the multiplier value into the orange box. <b><br>
-            <b> 3) Press "Multiply" and obtain your new file. </b>
+            <b> 1) Upload StackSizeController.json file by clicking "Choose File". <b><br>
+            <b> 2) Write the multiplier value into the small orange box. <b><br>
+            <b> 3) Press "Multiply" and obtain your new config file. </b>
+        </div>
+        <div>
+            <p><-- Baturalp Kızıltan - <txt>2021</txt> --></p>
         </div>
     </div>
+    <script src="static/FileSaver.js"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>
