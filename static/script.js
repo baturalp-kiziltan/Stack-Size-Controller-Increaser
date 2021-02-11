@@ -26,7 +26,7 @@ document.getElementById('submit').addEventListener('click', () => {
                 }    
             }
     
-            let newTextData = JSON.stringify(jsonData);
+            let newTextData = JSON.stringify(jsonData, null, 2);
             var blob = new Blob([newTextData], {type: "text/plain;charset=utf-8"});
             saveAs(blob, "StackSizeController.json");
     
