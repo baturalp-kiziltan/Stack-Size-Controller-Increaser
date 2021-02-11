@@ -11,7 +11,7 @@ document.getElementById('submit').addEventListener('click', () => {
     
             let multiplier = document.getElementById('mult').value;
             
-            if (isNan(parseInt(multiplier))) {
+            if (isNaN(parseInt(multiplier))) {
                 alert('Invalid multiplier value!');
                 return;
             }
