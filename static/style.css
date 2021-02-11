@@ -80,3 +80,12 @@ input[type=submit] {
     letter-spacing: 1px;
     font-weight: bold;
 }
+
+p {
+    font-size: 15px;
+    margin-top: 4em;
+}
+
+txt {
+    font-size: 13px;
+}
