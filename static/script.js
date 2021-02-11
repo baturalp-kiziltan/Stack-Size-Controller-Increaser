@@ -10,10 +10,9 @@ document.getElementById('submit').addEventListener('click', () => {
             let size = Object.keys(jsonData.itemlist).length;
     
             let multiplier = document.getElementById('mult').value;
-            alert(multiplier);
             
-            if (multiplier == undefined) {
-                alert('Undefined multiplier value!');
+            if (isNan(parseInt(multiplier))) {
+                alert('Invalid multiplier value!');
                 return;
             }
     
